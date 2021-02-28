@@ -9,7 +9,7 @@ import scala.collection.immutable.Seq;
 
 import java.util.List;
 
-public interface HaskellClassDeclaration extends HaskellDeclarationElement {
+public interface HaskellClassDeclaration extends HaskellTopDeclaration, HaskellDeclarationElement {
 
     @Nullable
     HaskellCdecls getCdecls();
